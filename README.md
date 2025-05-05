@@ -1,19 +1,16 @@
-    Traccia 1 – Web Server + Sito Web Statico (livello base/intermedio)
+##Traccia 1 – Web Server + Sito Web Statico (livello base/intermedio)
 
-Titolo: "Realizzazione di un Web Server minimale in Python e pubblicazione di un sito statico"
+#Titolo: "Realizzazione di un Web Server minimale in Python e pubblicazione di un sito statico"
 
 Obiettivo:
 Progettare un semplice server HTTP in Python (usando socket) e servire un sito web statico con HTML/CSS.
 
-Requisiti minimi:
+#Requisiti minimi:
 
-    Il server deve rispondere su localhost:8080.
-
-    Deve servire almeno 3 pagine HTML statiche.
-
-    Gestione di richieste GET e risposta con codice 200.
-
-    Implementare risposta 404 per file inesistenti.
+-Il server deve rispondere su localhost:8080.
+-Deve servire almeno 3 pagine HTML statiche.
+-Gestione di richieste GET e risposta con codice 200.
+-Implementare risposta 404 per file inesistenti.
 
 Estensioni opzionali:
 
