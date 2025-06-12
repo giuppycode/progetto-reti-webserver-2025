@@ -4,7 +4,6 @@
 
 from socket import *
 import os
-import threading
 
 # Configurazione del server
 serverPort = 8080
@@ -139,10 +138,8 @@ def main():
             connectionSocket, addr = serverSocket.accept()
             print(connectionSocket, addr)
             
-            # Gestione della connessione in un thread separato
-            client_thread = threading.Thread(target=handle_client, args=(connectionSocket, addr))
-            client_thread.daemon = True
-            client_thread.start()
+            # Gestione della connessione direttamente nel thread principale
+            handle_client(connectionSocket, addr)
             
     except KeyboardInterrupt:
         print("\nServer arrestato.")
