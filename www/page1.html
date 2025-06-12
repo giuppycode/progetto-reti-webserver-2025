@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGE1 - Il Mio Sito Web</title>
+    <title>Il Progetto - Server HTTP Python</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,41 +12,102 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="page1.html" class="active">PAGE1</a></li>
-                <li><a href="page2.html">PAGE2</a></li>
+                <li><a href="page1.html" class="active">Il Progetto</a></li>
+                <li><a href="page2.html">Demo & Test</a></li>
             </ul>
         </nav>
     </header>
     
     <main>
         <section class="hero">
-            <h2>TITOLO</h2>
-            <p>Scopri il progetto dietro questo server web minimalista</p>
+            <h2>🔧 Dettagli Tecnici del Progetto</h2>
+            <p>Esplora l'architettura e l'implementazione del mio server HTTP Python</p>
         </section>
         
         <section class="content">
-            <h2>Il Progetto</h2>
+            <h2>📖 Panoramica del Progetto</h2>
             <p>
-                Questo progetto è stato sviluppato come esempio didattico per mostrare 
-                come implementare un server HTTP minimale utilizzando Python e il modulo 
-                socket. L'obiettivo è fornire un esempio funzionante ma semplice.
+                Questo server HTTP è stato sviluppato come progetto didattico per illustrare 
+                i concetti fondamentali della programmazione di rete e del protocollo HTTP. 
+                L'implementazione utilizza esclusivamente le librerie standard di Python, 
+                dimostrando come creare un server web funzionale partendo dai socket di base.
             </p>
             
-            <h2>Caratteristiche</h2>
+            <h2>🏗️ Architettura del Sistema</h2>
+            <p>
+                Il server è strutturato secondo un'architettura modulare che separa chiaramente 
+                le responsabilità: gestione delle connessioni, parsing delle richieste HTTP, 
+                routing dei file e generazione delle risposte.
+            </p>
+            
             <ul>
-                <li>Server HTTP implementato con Python e socket</li>
-                <li>Gestione di richieste GET</li>
-                <li>Risposte 200 OK e 404 Not Found</li>
-                <li>Servizio di file statici (HTML, CSS)</li>
+                <li><strong>Socket Layer:</strong> Gestione delle connessioni TCP/IP di basso livello</li>
+                <li><strong>HTTP Parser:</strong> Analisi e interpretazione delle richieste HTTP</li>
+                <li><strong>File System:</strong> Accesso sicuro ai file statici</li>
+                <li><strong>Response Generator:</strong> Costruzione delle risposte HTTP</li>
+                <li><strong>Error Handler:</strong> Gestione degli errori e logging</li>
+                <li><strong>MIME Detection:</strong> Identificazione automatica dei tipi di file</li>
+            </ul>
+        </section>
+        
+        <section class="content">
+            <h2>⚙️ Caratteristiche Implementate</h2>
+            
+            <h3>🌐 Protocollo HTTP/1.1</h3>
+            <p>
+                Implementazione completa delle specifiche HTTP/1.1 con supporto per:
+            </p>
+            <ul>
+                <li>Richieste GET con parsing completo degli header</li>
+                <li>Codici di stato HTTP standard (200, 404, 405, 500)</li>
+                <li>Header Content-Type e Content-Length automatici</li>
+                <li>Gestione delle connessioni persistenti</li>
             </ul>
             
+            <h3>🔒 Sicurezza</h3>
+            <p>
+                Misure di sicurezza integrate per prevenire vulnerabilità comuni:
+            </p>
+            <ul>
+                <li>Protezione contro path traversal</li>
+                <li>Validazione rigorosa dei percorsi richiesti</li>
+                <li>Sandbox nella directory www</li>
+                <li>Gestione sicura degli errori senza information leakage</li>
+            </ul>
             
+            <h3>📊 Performance & Monitoring</h3>
+            <p>
+                Sistema di monitoraggio e ottimizzazioni per le performance:
+            </p>
+            <ul>
+                <li>Logging dettagliato di tutte le richieste</li>
+                <li>Gestione efficiente della memoria</li>
+                <li>Threading per connessioni concorrenti</li>
+                <li>Buffer ottimizzati per il trasferimento file</li>
+            </ul>
         </section>
+        
+        <section class="content">
+            <h2>🎯 Obiettivi Didattici</h2>
+            <p>
+                Questo progetto mira a fornire una comprensione pratica di:
+            </p>
+            <ul>
+                <li>Programmazione di rete con socket Python</li>
+                <li>Protocollo HTTP e sue implementazioni</li>
+                <li>Gestione delle connessioni TCP/IP</li>
+                <li>Parsing e validazione dei dati</li>
+                <li>Architetture client-server</li>
+                <li>Sicurezza nelle applicazioni web</li>
+                <li>Gestione degli errori e logging</li>
+            </ul>
+        </section>
+        
+        
     </main>
     
     <footer>
-        <p>&copy; 2025 Web Server Python - Progetto Dimostrativo programmazione di reti</p>
+        <p>&copy; 2025 Web Server Python - Progetto Dimostrativo di Programmazione di Reti</p>
     </footer>
-
 </body>
 </html>
